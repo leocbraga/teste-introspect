@@ -20,4 +20,9 @@ express()
 
         res.send('{}');
     })
+    .post('/oauth2/token', (req, res) => {
+        console.log(req.body);    
+
+        res.send('{}');
+    })
 .listen(PORT, () => console.log(`Listening on ${ PORT }`))
