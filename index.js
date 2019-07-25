@@ -4,7 +4,8 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000
 
 express()
-  //.use(bodyParser.json())
+  .use(bodyParser.json())
+  .use(bodyParser.urlencoded({ extended: true }))
   .get('/', (req, res) => {
       res.send('e ae!');
 
