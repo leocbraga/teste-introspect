@@ -15,4 +15,9 @@ express()
     
         res.send('{}');
    })
+   .post('/token', (req, res) => {
+        console.log(req.body);    
+
+        res.send('{}');
+    })
 .listen(PORT, () => console.log(`Listening on ${ PORT }`))
