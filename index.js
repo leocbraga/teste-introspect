@@ -8,6 +8,8 @@ express()
   .get('/', (req, res) => {
       res.send('e ae!');
 
+      console.log(req);
+
       console.log("log")
   })
   .post('/oauth', (req, res) => {
