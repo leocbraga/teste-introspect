@@ -22,8 +22,11 @@ express()
         console.log("corpo")
 
         console.log(req.body)
+
+        res.set('Content-Type', 'application/json');
+
     
-        res.send('{active: true}');
+        res.send('{"active": true}');
    })
    .post('/token', (req, res) => {
         console.log(req.body);   
