@@ -23,7 +23,7 @@ express()
 
         console.log(req.body)
     
-        res.send('{}');
+        res.send('{active: true}');
    })
    .post('/token', (req, res) => {
         console.log(req.body);   
