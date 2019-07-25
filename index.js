@@ -12,15 +12,19 @@ express()
   })
   .post('/oauth', (req, res) => {
         console.log(req.body);    
+        console.log("/oauth");
     
         res.send('{}');
    })
    .post('/token', (req, res) => {
-        console.log(req.body);    
+        console.log(req.body);   
+        console.log("/token"); 
 
         res.send('{}');
     })
     .post('/oauth2/token', (req, res) => {
+
+        console.log("/oauth2/token");
         console.log(req.body);    
 
         res.send('{}');
