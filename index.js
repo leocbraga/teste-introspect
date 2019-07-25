@@ -17,6 +17,10 @@ express()
         console.log("/oauth");
 
         console.log(req);    
+
+        console.log("corpo")
+
+        console.log(req.body)
     
         res.send('{}');
    })
