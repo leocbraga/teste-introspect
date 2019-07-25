@@ -13,8 +13,10 @@ express()
       console.log("log")
   })
   .post('/oauth', (req, res) => {
-        console.log(req.body);    
+        
         console.log("/oauth");
+
+        console.log(req);    
     
         res.send('{}');
    })
