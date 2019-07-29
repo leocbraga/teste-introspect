@@ -13,6 +13,16 @@ express()
 
       console.log("log")
   })
+  .get('/metadata', (req, res) => {
+      
+    console.log(req);
+
+    res.set('API-OAUTH-METADATA-FOR-PAYLOAD', '{"teste": "teste2"}');
+    res.set('API-OAUTH-METADATA-FOR-ACCESSTOKEN', '{"teste3": "teste4"}');
+
+    res.send('{}');
+
+  })
   .post('/oauth', (req, res) => {
         
         console.log("/oauth");
