@@ -15,8 +15,12 @@ express()
   })
   .get('/metadata', (req, res) => {
       
+    console.log("=============")
     console.log(req);
+    console.log("=============")
 
+    console.log("Enviando: ")
+    console.log(req.body)
     res.set('API-OAUTH-METADATA-FOR-PAYLOAD', '{"teste": "teste2"}');
     res.set('API-OAUTH-METADATA-FOR-ACCESSTOKEN', '{"teste3": "teste4"}');
 
