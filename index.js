@@ -18,7 +18,8 @@ express()
     console.log("=============")
     console.log(req);
     console.log("=============")
-
+    console.log("headers: ");
+    console.log(req.headers);
     console.log("Enviando: ")
     console.log(req.body)
     res.set('API-OAUTH-METADATA-FOR-PAYLOAD', '{"teste": "teste2"}');
